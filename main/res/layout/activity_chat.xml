@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+   <!-- <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@id/imageButton2"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/imageButton2"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/text1"
+        android:textSize="25sp"
+        android:id="@+id/textView" />-->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:weightSum="1"
+        android:layout_above="@+id/imageButton">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stackFromBottom="true"
+            android:id="@+id/listView" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="47dp"
+        android:layout_height="47dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/send_icon"
+        android:scaleType="fitXY"
+        android:id="@+id/imageButton"
+         />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/imageButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/imageButton"
+        android:layout_gravity="start"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/input_text"
+        android:inputType="text" />
+
+
+
+
+
+
+</RelativeLayout>
